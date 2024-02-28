@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blog</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <style>
+      .accordion{
+        margin: 150px;
+      }
+      .go_back{
+        float: right;
+        text-decoration: none;
+        color: black;
+        border: 1px solid red;
+        padding: 5px;
+      }
+    </style>
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+
+    <hr>
+    <div class="accordion accordion-flush container p-5" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                Discuss the scope of var, let, and const
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+
+                <p>var</p>
+                <ul>
+                    <li>var has function level scope. That means it is usable throughout function.</li>
+                    <li>var can be redecleared and reassigned.</li>
+                </ul>
+
+                <p>let</p>
+                <ul>
+                    <li>let has block level scope. That means it is visible within the block it is declared.</li>
+                    <li>let allows reassignment of values but not redeclaration within the same scope.</li>
+                </ul>
+
+                <p>const</p>
+                <ul>
+                    <li>const also has block level scope.</li>
+                    <li>It should be declared with a value and the value can not be changed.</li>
+                    <li>It does not allow reassignment or redeclaration within the same scope.</li>
+                </ul>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+              Tell us the use cases of null and undefined
+            </button>
+          </h2>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+                <p>undefined</p>
+                <ul>
+                    <li>Represents a variable that has been declared but has not been assigned a value.</li>
+                    <li>It is the default value of uninitialized variables.</li>
+                    <li>It is also returned by functions that do not explicitly return anything.</li>
+                    <li>Often used to check if a variable has been assigned a value or not.</li>
+                </ul>
+
+                <p>null</p>
+                <ul>
+                    <li>Represents an intentional absence of any object value.</li>
+                    <li>It is usually assigned to variables to indicate that they don't currently refer to any object.</li>
+                    <li>It can be used to explicitly clear the value of a variable, indicating that it no longer points to an object.</li>
+                    <li>It means a variable has not been assigned a value yet.</li>
+                </ul>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                What do you mean by REST API?
+            </button>
+          </h2>
+          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+                <p>Rest API</p>
+                <ul>
+                    <li>REST API uses HTTP methods to interact with resources.</li>
+                    <li>Resources are represented as URLs.</li>
+                    <li>CRUD operations (Create, Read, Update, Delete) are performed on resources.</li>
+                    <li>It is stateless, meaning each request from the client to the server contains all the information necessary to understand and process the request.</li>
+                    <li>Responses are typically sent in JSON or XML format, but JSON is more commonly used due to its simplicity and readability.</li>
+                </ul>
+
+                <a href="index.html">go back</a>
+            </div>
+
+            
+          </div>
+          <a class="go_back" href="index.html" target="_blank">Back to Home</a>
+        </div>
+      </div>
+      
+      <hr>
+    </div>
+      
+</body>
+</html>
